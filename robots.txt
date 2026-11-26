@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://murzzsite.github.io/law-buh-zhuravleva/sitemap.xml

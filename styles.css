@@ -254,3 +254,8 @@ button,input,select{font:inherit;color:inherit}
 }
 @media (max-width:380px){.logo__text small{display:none}.h2{font-size:1.9rem}}
 @media (prefers-reduced-motion:reduce){*{transition-duration:.01ms!important;animation:none!important}}
+
+.agree{display:flex;gap:10px;align-items:flex-start;font-size:.88rem;line-height:1.45;color:var(--ink-2);cursor:pointer}
+.agree input{flex:0 0 auto;width:20px;height:20px;margin:1px 0 0;accent-color:var(--accent)}
+.agree a{color:var(--ink);text-decoration:underline}
+.footer__row a+a{margin-left:16px}

@@ -113,6 +113,8 @@ const LEAD_ENDPOINT = 'https://lead-relay.leestygpt.workers.dev/lead/3PMHHYQESM'
     const payload = {};
     new FormData(form).forEach((v, k) => { payload[k] = v; });
     if (payload._gotcha) return;
+    if (!form.querySelector('[name="consent"]')?.checked) { alert('Поставьте галочку согласия на обработку персональных данных'); return; }
+    delete payload.consent;
     const digits = (payload.phone || '').replace(/\D/g, '');
     if (!payload.name || digits.length < 11) { alert('Укажите имя и телефон полностью'); return; }
     btn.disabled = true; label.textContent = 'Отправляем…';
